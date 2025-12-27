@@ -1,0 +1,5 @@
+include pyproject.toml
+include README.md
+recursive-include src/minui/static *
+recursive-include src/minui/templates *
+recursive-include src/minui/assets *

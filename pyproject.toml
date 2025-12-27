@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minui"
+version = "0.1.0"
+description = "LLM code review tool"
+authors = [{name = "Igor", email = "igor-alexey@hotmail.com"}]
+readme = "README.md"
+requires-python = ">=3.8"
+license = "GPL-2.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "flask>=3.0.0",
+    "requests>=2.31.0",
+    "pathspec>=0.11.0",
+    "waitress>=3.0.0"
+]
+
+[project.scripts]
+minui = "minui.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/IgorAlexey/minui"
+
+[tool.setuptools.package-data]
+minui = ["static/**/*", "templates/*", "assets/*"]
