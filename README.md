@@ -18,7 +18,7 @@ Settings are saved in your browser's local storage.
 
 ### Ignoring files
 
-MailUi respects .treeignore. Create it in your project root directory (Syntax is identical to .gitignore).
+MinUI respects .treeignore. Create it in your project root directory (Syntax is identical to .gitignore).
 
 > [!NOTE] 
 > MinUI does not assume any VCS, which is why we use .treeignore instead of something like a .gitignore. But the idea is the same, if you wouldn't send it to Github, you probably don't want
